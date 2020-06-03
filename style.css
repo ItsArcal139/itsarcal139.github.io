@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap');
+
+@font-face {
+    font-family: "Electronize";
+    src: url("./assets/fonts/Electrolize-Regular.ttf");
+}
+
+canvas#main, audio#game-audio {
+    width: 100%;
+}
+
+.dg.ac {
+    z-index: 9999 !important;
+}
