@@ -155,6 +155,19 @@
                 "color": "#00bfa5",
                 "level": 15
             }
+        },
+        {
+            "id": "c2.robo.restriction@chaos",
+            "chart": "../cytus/assets/charts/cytus/robo001_003_2.bytes",
+            "cover": "https://ct2view.the-kitti.com/thumbnail/robo001_003.png",
+            "audio": "../cytus/assets/audio/robo001_003.wav",
+            "title": "Restriction",
+            "romanizedTitle": "ROBO_Head",
+            "difficulty": {
+                "name": "CHAOS",
+                "color": "#a81ca8",
+                "level": 11
+            }
         }
     ]
 }

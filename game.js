@@ -96,6 +96,15 @@ class Note {
         } else {
             this.clearTime = null;
         }
+
+        if(game.currentTick > this.tick && game.currentTick - this.tick < page.getTickLength()) {
+            if(this.clickPlayedTime == undefined) {
+                this.clickPlayedTime = game.playbackTime;
+                game.playOneShotAudio(Assets.click_fx);
+            }
+        } else {
+            this.clickPlayedTime = null;
+        }
     }
 
     /** @param {Game} game */
@@ -166,7 +175,7 @@ class CircleNote extends Note {
         var page = game.chart.pages[this.pageIndex];
 
         var noteTime = game.tickTimeMap[this.tick];
-        var duration = game.getMsPerTick(page.startTick + 1, game.chart.timeBase) * page.getTickLength();
+        var duration = Math.min(1250, game.getMsPerTick(page.startTick + 1, game.chart.timeBase) * page.getTickLength());
 
         var ctx = game.context;
         var x = (game.canvas.width - game.fieldWidth) / 2 + this.x * game.fieldWidth;
@@ -1345,24 +1354,12 @@ class Game {
         for(var i=0; i<=85; i++) {
             Assets.loadImageAsset("mm_" + i, `./assets/mm/MM_Logo-MM_Logo_000${i<10?"0":""}${i}.png`);
         }
-        Assets.loadAudioAsset("mm_audio", "./assets/mm/mm_sound.wav");;
+        Assets.loadAudioAsset("mm_audio", "./assets/mm/mm_sound.wav");
+        Assets.loadAudioAsset("click_fx", "./assets/tapFX_3.wav");
     }
 
     playMMEffect() {
-        var buffer = Assets.mm_audio;
-        if(buffer) {
-            var ctx = this.audioContext;
-            var mmSource = ctx.createBufferSource();
-            mmSource.buffer = buffer;
-            var gain = ctx.createGain();
-            gain.gain.value = 1;
-            mmSource.connect(gain).connect(ctx.destination);
-            mmSource.addEventListener("ended", e => {
-                mmSource.disconnect();
-            });
-            mmSource.start(0);
-        }
-
+        this.playOneShotAudio(Assets.mm_audio);
         var obj = new AnimatedObject();
         obj.data.startTime = performance.now();
         obj.update = game => {
@@ -1384,6 +1381,21 @@ class Game {
             if(time > duration) obj.isFinished = true;
         };
         this.animatedObjects.push(obj);
+    }
+
+    playOneShotAudio(buffer) {
+        if(buffer) {
+            var ctx = this.audioContext;
+            var source = ctx.createBufferSource();
+            source.buffer = buffer;
+            var gain = ctx.createGain();
+            gain.gain.value = 1;
+            source.connect(gain).connect(ctx.destination);
+            source.addEventListener("ended", e => {
+                source.disconnect();
+            });
+            source.start(0);
+        }
     }
 
     setupDefaultDebugLines() {
@@ -1623,12 +1635,12 @@ class Game {
             this.chart.notes.forEach(n => {
                 if(n instanceof LongHoldNote || n instanceof HoldNote) {
                     var endTick = n.getEndTick();
-                    if(this.currentTick >= endTick) {
+                    if(this.currentTick > endTick) {
                         lastClearTime = this.tickTimeMap[endTick];
                         count++;
                     }
                 } else {
-                    if(this.currentTick >= n.tick) {
+                    if(this.currentTick > n.tick) {
                         lastClearTime = this.tickTimeMap[n.tick];
                         count++;
                     }
@@ -1659,9 +1671,16 @@ class Game {
                 r += "0";
             }
             return r + n;
-        })(Math.round(
-            1000000 * count / Math.max(1, maxCombo)
-        ));
+        })((() => {
+            var s = 0;
+            if(!this.chart) return 0;
+            var N = this.chart.notes.length;
+            this.chart.notes.forEach((_, i) => {
+                if(i < count)
+                s += 900000 / N + 200000 / (N * (N - 1)) * i;
+            });
+            return Math.round(s);
+        })());
 
         ctx.textBaseline = "alphabetic";
         ctx.font = "700 " + (40 * this.ratio) + "px " + font1;
