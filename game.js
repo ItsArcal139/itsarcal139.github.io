@@ -1,7 +1,7 @@
 // import { Serializer } from "./utils";
 
 var Assets = {
-    preferredFont: `Exo, "Noto Sans CJK TC", sans-serif`,
+    preferredFont: `Rajdhani, "Noto Sans CJK TC", sans-serif`,
     loadImageAsset(name, source) {
         return new Promise((resolve, _) => {
             var img = new Image();
@@ -1831,7 +1831,7 @@ class Game {
         ctx.textBaseline = "middle";
         ctx.textAlign = "left";
 
-        var preferredFont = "Exo, 'sans-serif'";
+        var preferredFont = Assets.preferredFont;
 
         var removalLines = [];
         var pn = performance.now();
@@ -1839,7 +1839,6 @@ class Game {
         var persistentCount = 0;
         var persistentRenderCount = 0;
         this.debugLines.forEach(l => (l.persistent && !l.hidden) ? persistentCount++ : 0);
-
         
         this.defaultLines.resLog.content = `Resolution: ${this.canvas.width}x${this.canvas.height} @ ${Math.round(this.ratio*10)/10}x`;
         this.defaultLines.fpsLog.content = "FPS: " + (Math.round(100000 / deltaTime) / 100);
@@ -1874,18 +1873,20 @@ class Game {
 
             if(this.enableDebugLog && line.y > -100) {
                 ctx.fillStyle = "rgba(0, 0, 0, 0.6)";
-                ctx.fillRect(0, line.y, canvas.width, 30);
-
                 ctx.font = "600 18px " + preferredFont;
                 var badgeWidth = ctx.measureText(line.badge.text).width;
+                ctx.font = "600 19px " + preferredFont;
+                var contentWidth = ctx.measureText(line.content).width;
+                ctx.fillRect(0, line.y, contentWidth + 32 + badgeWidth + 10, 30);
+
                 ctx.fillStyle = line.badge.background;
-                ctx.fillRect(10, line.y + 3, badgeWidth + 12, 26);
+                ctx.fillRect(10, line.y + 3, badgeWidth + 16, 26);
                 ctx.fillStyle = line.badge.color;
                 ctx.fillText(line.badge.text, 16, line.y + 17);
 
                 ctx.fillStyle = "white";
                 ctx.font = "600 19px " + preferredFont;
-                ctx.fillText(line.content, 32 + badgeWidth, line.y + 18);
+                ctx.fillText(line.content, 32 + badgeWidth, line.y + 17);
             }
             ctx.globalAlpha = 1;
         });

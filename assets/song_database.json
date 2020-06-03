@@ -7,45 +7,12 @@
     ],
     "cytus2": [
         {
-            "id": "io.cytoid.intro@ex",
-            "chart": "../cytus/assets/charts/cytus/chart.ex.txt",
-            "audio": "../cytus/assets/audio/ex.mp3",
-            "title": "Cytoid Intro",
-            "difficulty": {
-                "name": "Remix",
-                "color": "#6f0000",
-                "level": 14
-            }
-        },
-        {
-            "id": "cytoid.echo@hard",
-            "chart": "../cytus/assets/charts/cytus/echo.hard.txt",
-            "audio": "../cytus/assets/audio/Echo.mp3",
-            "title": "Echo",
-            "difficulty": {
-                "name": "Echo",
-                "color": "#6f0000",
-                "level": 14
-            }
-        },
-        {
-            "id": "pitstain.godknows@hard",
-            "chart": "../cytus/assets/charts/cytus/godknows.hard.cytus.txt",
-            "audio": "../cytus/assets/audio/godknows.mp3",
-            "title": "God knows...",
-            "difficulty": {
-                "name": "Hard",
-                "color": "#b06ad3",
-                "level": 14
-            }
-        },
-        {
             "id": "c2.robo.deadlyslotgame@glitch",
-            "chart": "../cytus/assets/charts/cytus/robo001_001_3.bytes",
+            "chart": "./charts/robo001_001_3.bytes",
             "title": "Deadly Slot Game",
             "romanizedTitle": "ROBO_Head",
             "cover": "https://ct2view.the-kitti.com/thumbnail/robo001_001.png",
-            "audio": "../cytus/assets/audio/robo001_001.wav",
+            "audio": "./charts/robo001_001.wav",
             "difficulty": {
                 "name": "GLITCH",
                 "color": "#00bfa5",
@@ -54,9 +21,9 @@
         },
         {
             "id": "c2.neko.liberation@glitch",
-            "chart": "../cytus/assets/charts/cytus/neko001_033_3.bytes",
+            "chart": "./charts/neko001_033_3.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/neko001_033.png",
-            "audio": "../cytus/assets/audio/neko001_033.wav",
+            "audio": "./charts/neko001_033.wav",
             "title": "Liberation",
             "romanizedTitle": "NEKO#ΦωΦ",
             "difficulty": {
@@ -67,9 +34,9 @@
         },
         {
             "id": "c2.neko.brainpower@chaos",
-            "chart": "../cytus/assets/charts/cytus/neko001_012_2.bytes",
+            "chart": "./charts/neko001_012_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/neko001_012.png",
-            "audio": "../cytus/assets/audio/neko001_012.wav",
+            "audio": "./charts/neko001_012.wav",
             "title": "Brain Power",
             "romanizedTitle": "NEKO#ΦωΦ",
             "difficulty": {
@@ -80,9 +47,9 @@
         },
         {
             "id": "c2.neko.blowmymind@chaos",
-            "chart": "../cytus/assets/charts/cytus/neko001_009_2.bytes",
+            "chart": "./charts/neko001_009_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/neko001_009.png",
-            "audio": "../cytus/assets/audio/neko001_009.wav",
+            "audio": "./charts/neko001_009.wav",
             "title": "Blow my mind",
             "romanizedTitle": "NEKO#ΦωΦ",
             "difficulty": {
@@ -93,9 +60,9 @@
         },
         {
             "id": "c2.neko.chromevox@chaos",
-            "chart": "../cytus/assets/charts/cytus/neko001_010_2.bytes",
+            "chart": "./charts/neko001_010_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/neko001_010.png",
-            "audio": "../cytus/assets/audio/neko001_010.wav",
+            "audio": "./charts/neko001_010.wav",
             "title": "Chrome VOX",
             "romanizedTitle": "NEKO#ΦωΦ",
             "difficulty": {
@@ -106,9 +73,9 @@
         },
         {
             "id": "c2.neko.chromevox@glitch",
-            "chart": "../cytus/assets/charts/cytus/neko001_010_3.bytes",
+            "chart": "./charts/neko001_010_3.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/neko001_010.png",
-            "audio": "../cytus/assets/audio/neko001_010.wav",
+            "audio": "./charts/neko001_010.wav",
             "title": "Chrome VOX",
             "romanizedTitle": "NEKO#ΦωΦ",
             "difficulty": {
@@ -119,9 +86,9 @@
         },
         {
             "id": "c2.ivy.v@chaos",
-            "chart": "../cytus/assets/charts/cytus/ivy001_014_2.bytes",
+            "chart": "./charts/ivy001_014_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/ivy001_014.png",
-            "audio": "../cytus/assets/audio/ivy001_014.wav",
+            "audio": "./charts/ivy001_014.wav",
             "title": "V.",
             "romanizedTitle": "Ivy",
             "difficulty": {
@@ -132,9 +99,9 @@
         },
         {
             "id": "c2.vanessa.chaos.offline@chaos",
-            "chart": "../cytus/assets/charts/cytus/vanessa001_009_2.bytes",
+            "chart": "./charts/vanessa001_009_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/vanessa001_009.png",
-            "audio": "../cytus/assets/audio/vanessa001_009.wav",
+            "audio": "./charts/vanessa001_009.wav",
             "title": "CHAOS // System Offline //",
             "romanizedTitle": "Vanessa",
             "difficulty": {
@@ -145,9 +112,9 @@
         },
         {
             "id": "me.kaka.chaos.v.mix@chaos",
-            "chart": "../cytus/assets/charts/cytus/me.kaka.chaos.v.mix/mix.json",
+            "chart": "./charts/mix.json",
             "cover": "https://ct2view.the-kitti.com/thumbnail/robo001_001.png",
-            "audio": "../cytus/assets/charts/cytus/me.kaka.chaos.v.mix/music.mp3",
+            "audio": "./charts/music.mp3",
             "title": "CHAOS + V.",
             "romanizedTitle": "ROBO_Head + Ivy",
             "difficulty": {
@@ -158,9 +125,9 @@
         },
         {
             "id": "c2.robo.restriction@chaos",
-            "chart": "../cytus/assets/charts/cytus/robo001_003_2.bytes",
+            "chart": "./charts/robo001_003_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/robo001_003.png",
-            "audio": "../cytus/assets/audio/robo001_003.wav",
+            "audio": "./charts/robo001_003.wav",
             "title": "Restriction",
             "romanizedTitle": "ROBO_Head",
             "difficulty": {
