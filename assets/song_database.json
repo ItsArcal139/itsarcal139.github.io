@@ -8,11 +8,11 @@
     "cytus2": [
         {
             "id": "c2.robo.deadlyslotgame@glitch",
-            "chart": "./charts/robo001_001_3.bytes",
+            "chart": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/robo001_001_3.bytes",
             "title": "Deadly Slot Game",
             "romanizedTitle": "ROBO_Head",
             "cover": "https://ct2view.the-kitti.com/thumbnail/robo001_001.png",
-            "audio": "./charts/robo001_001.wav",
+            "audio": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/robo001_001.wav?raw=true",
             "difficulty": {
                 "name": "GLITCH",
                 "color": "#00bfa5",
@@ -21,9 +21,9 @@
         },
         {
             "id": "c2.neko.liberation@glitch",
-            "chart": "./charts/neko001_033_3.bytes",
+            "chart": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/neko001_033_3.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/neko001_033.png",
-            "audio": "./charts/neko001_033.wav",
+            "audio": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/neko001_033.wav?raw=true",
             "title": "Liberation",
             "romanizedTitle": "NEKO#ΦωΦ",
             "difficulty": {
@@ -34,9 +34,9 @@
         },
         {
             "id": "c2.neko.brainpower@chaos",
-            "chart": "./charts/neko001_012_2.bytes",
+            "chart": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/neko001_012_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/neko001_012.png",
-            "audio": "./charts/neko001_012.wav",
+            "audio": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/neko001_012.wav?raw=true",
             "title": "Brain Power",
             "romanizedTitle": "NEKO#ΦωΦ",
             "difficulty": {
@@ -47,9 +47,9 @@
         },
         {
             "id": "c2.neko.blowmymind@chaos",
-            "chart": "./charts/neko001_009_2.bytes",
+            "chart": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/neko001_009_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/neko001_009.png",
-            "audio": "./charts/neko001_009.wav",
+            "audio": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/neko001_009.wav?raw=true",
             "title": "Blow my mind",
             "romanizedTitle": "NEKO#ΦωΦ",
             "difficulty": {
@@ -60,9 +60,9 @@
         },
         {
             "id": "c2.neko.chromevox@chaos",
-            "chart": "./charts/neko001_010_2.bytes",
+            "chart": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/neko001_010_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/neko001_010.png",
-            "audio": "./charts/neko001_010.wav",
+            "audio": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/neko001_010.wav?raw=true",
             "title": "Chrome VOX",
             "romanizedTitle": "NEKO#ΦωΦ",
             "difficulty": {
@@ -73,9 +73,9 @@
         },
         {
             "id": "c2.neko.chromevox@glitch",
-            "chart": "./charts/neko001_010_3.bytes",
+            "chart": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/neko001_010_3.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/neko001_010.png",
-            "audio": "./charts/neko001_010.wav",
+            "audio": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/neko001_010.wav?raw=true",
             "title": "Chrome VOX",
             "romanizedTitle": "NEKO#ΦωΦ",
             "difficulty": {
@@ -86,9 +86,9 @@
         },
         {
             "id": "c2.ivy.v@chaos",
-            "chart": "./charts/ivy001_014_2.bytes",
+            "chart": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/ivy001_014_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/ivy001_014.png",
-            "audio": "./charts/ivy001_014.wav",
+            "audio": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/ivy001_014.wav?raw=true",
             "title": "V.",
             "romanizedTitle": "Ivy",
             "difficulty": {
@@ -99,9 +99,9 @@
         },
         {
             "id": "c2.vanessa.chaos.offline@chaos",
-            "chart": "./charts/vanessa001_009_2.bytes",
+            "chart": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/vanessa001_009_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/vanessa001_009.png",
-            "audio": "./charts/vanessa001_009.wav",
+            "audio": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/vanessa001_009.wav?raw=true",
             "title": "CHAOS // System Offline //",
             "romanizedTitle": "Vanessa",
             "difficulty": {
@@ -112,9 +112,9 @@
         },
         {
             "id": "me.kaka.chaos.v.mix@chaos",
-            "chart": "./charts/mix.json",
+            "chart": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/mix.json",
             "cover": "https://ct2view.the-kitti.com/thumbnail/robo001_001.png",
-            "audio": "./charts/music.mp3",
+            "audio": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/music.mp3?raw=true",
             "title": "CHAOS + V.",
             "romanizedTitle": "ROBO_Head + Ivy",
             "difficulty": {
@@ -125,9 +125,9 @@
         },
         {
             "id": "c2.robo.restriction@chaos",
-            "chart": "./charts/robo001_003_2.bytes",
+            "chart": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/robo001_003_2.bytes",
             "cover": "https://ct2view.the-kitti.com/thumbnail/robo001_003.png",
-            "audio": "./charts/robo001_003.wav",
+            "audio": "https://github.com/ItsArcal139/itsarcal139.github.io/blob/master/charts/robo001_003.wav?raw=true",
             "title": "Restriction",
             "romanizedTitle": "ROBO_Head",
             "difficulty": {
